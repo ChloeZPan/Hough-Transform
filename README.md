@@ -19,7 +19,8 @@ input image</br>
 (5) output</br>
 results</br>
 
-## Comments and Results
+## Results
+The first 2 are results of Hough.py, the third one is the result of cv2.HoughCircle.
 ![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/figure1.png)
 ![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/figure2.png)
 ![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/output_circle.png)
