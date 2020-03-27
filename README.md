@@ -20,6 +20,10 @@ input image</br>
 results</br>
 
 ## Comments and Results
+![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/figure1.png)
+![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/figure2.png)
+![image](https://github.com/ChloeZPan/Hough-Transform/blob/master/output/output_circle.png)
+
 
 ## Source
 3.2 hough circle(霍夫圆变换)</br>
