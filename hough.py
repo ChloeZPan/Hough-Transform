@@ -12,12 +12,14 @@ def detectCircles(img,threshold,region,radius = None):
         [R_max,R_min] = radius
 
     R = R_max - R_min
+    
 #Initializing accumulator array.
     A = np.zeros((R_max,M+2*R_max,N+2*R_max))
     B = np.zeros((R_max,M+2*R_max,N+2*R_max))
 
     theta = np.arange(0,360)*np.pi/180
     edges = np.argwhere(img[:, :])
+    
 # vote in accumulator array
     for val in range(R):
         print(val)
@@ -29,6 +31,7 @@ def detectCircles(img,threshold,region,radius = None):
                 A[r, a, b] += 1
         A[r][A[r] < A[r].max()] = 0
         A[r][A[r] < threshold*len(theta)] = 0
+        
 # get the best in a region
     for r, a, b in np.argwhere(A):
         temp = A[r-region:r+region,a-region:a+region,b-region:b+region]
@@ -37,7 +40,6 @@ def detectCircles(img,threshold,region,radius = None):
         except:
             continue
         B[r + (r1-region),a+(a1-region),b+(b1-region)] = 1
-
     return B
 
 def displayCircles(A):
