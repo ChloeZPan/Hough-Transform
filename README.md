@@ -1,8 +1,4 @@
 # Hough-Transform
-
-Part of CSC449 Machine vision HW3</br>
-More details can be found in repo Machine-vision, HW3 folder.
-
 ## Files
 (1) hough.py</br>
 my implementation of hough circle transformation</br>
